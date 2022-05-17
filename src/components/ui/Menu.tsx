@@ -22,6 +22,9 @@ const MenuA = styled.a`
   color: #888;
   line-height: 1.5rem;
   text-decoration: none;
+  :hover {
+    color: #fff;
+  }
 `;
 
 export default Menu;

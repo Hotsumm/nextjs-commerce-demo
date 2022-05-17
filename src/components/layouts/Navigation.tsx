@@ -49,6 +49,9 @@ function Navigation() {
 }
 
 const NavigationContainer = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 40;
   width: 100%;
   background: #000000;
 `;
@@ -61,12 +64,15 @@ const NavigationWrap = styled.div`
 `;
 
 const NavContents = styled.div`
+  width: 33%;
   display: flex;
   align-items: center;
 `;
 
 const NavUserWrap = styled.ul`
+  width: 33%;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   gap: 0 1.5rem;
   li {
