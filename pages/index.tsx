@@ -3,13 +3,14 @@ import Head from 'next/head';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
-        <title>Commerce demo</title>
+        <title>Home | Commerce demo</title>
         <meta name="description" content="Next-commerce-demo" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    </div>
+      <div>Home 입니다.</div>
+    </>
   );
 };
 
