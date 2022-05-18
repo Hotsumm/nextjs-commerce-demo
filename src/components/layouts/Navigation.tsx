@@ -7,7 +7,7 @@ import SearchBar from 'src/components/ui/SearchBar';
 import Cart from '../ui/icons/Cart';
 import Heart from '../ui/icons/Heart';
 
-function Navigation() {
+export default function Navigation() {
   return (
     <>
       <NavigationContainer>
@@ -116,5 +116,3 @@ const NavMenu = styled.div`
   gap: 0 20px;
   margin-left: 30px;
 `;
-
-export default Navigation;

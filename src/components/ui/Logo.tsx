@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import Link from 'next/link';
 
-function Logo() {
+export default function Logo() {
   return (
     <>
       <Link href="/" passHref>
@@ -33,5 +33,3 @@ const LogoA = styled.a`
     transform: scale(1.05);
   }
 `;
-
-export default Logo;

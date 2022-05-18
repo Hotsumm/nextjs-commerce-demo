@@ -1,4 +1,4 @@
-function Search() {
+export default function Search() {
   return (
     <svg fill="currentColor" viewBox="0 0 20 20">
       <path
@@ -9,5 +9,3 @@ function Search() {
     </svg>
   );
 }
-
-export default Search;

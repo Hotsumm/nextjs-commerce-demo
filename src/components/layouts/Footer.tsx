@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import Logo from 'src/components/ui/Logo';
 import Menu from 'src/components/ui/Menu';
 
-function Footer() {
+export default function Footer() {
   return (
     <>
       <FooterContainer>
@@ -81,5 +81,3 @@ const FooterCol = styled.div`
     color: white;
   }
 `;
-
-export default Footer;

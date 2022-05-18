@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import Search from 'src/components/ui/icons/Search';
 
-function SearchBar() {
+export default function SearchBar() {
   return (
     <>
       <SearchBarWrap>
@@ -51,5 +51,3 @@ const SearchIcon = styled.div`
     width: 1.25rem;
   }
 `;
-
-export default SearchBar;

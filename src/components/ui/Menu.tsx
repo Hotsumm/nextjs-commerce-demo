@@ -6,7 +6,7 @@ interface MenuProps {
   name: string;
 }
 
-function Menu({ href, name }: MenuProps) {
+export default function Menu({ href, name }: MenuProps) {
   return (
     <>
       <Link href={href} passHref>
@@ -26,5 +26,3 @@ const MenuA = styled.a`
     color: #fff;
   }
 `;
-
-export default Menu;

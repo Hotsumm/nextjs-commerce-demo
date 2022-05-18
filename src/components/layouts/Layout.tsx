@@ -8,7 +8,7 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-function Layout({ children }: LayoutProps) {
+export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Navigation />
@@ -22,5 +22,3 @@ const Main = styled.main`
   width: 100vw;
   min-height: 100vh;
 `;
-
-export default Layout;
