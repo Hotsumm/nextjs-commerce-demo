@@ -8,7 +8,7 @@ interface HomeProps {
   products: IProduct[];
 }
 
-const productBackground = ['#7928ca', '#fafafa', '#ff0080;'];
+const productBackground = ['#7928ca', '#fafafa', '#ff0080;', '#f1e05a'];
 
 export default function Home({ products }: HomeProps) {
   return (
@@ -20,7 +20,7 @@ export default function Home({ products }: HomeProps) {
       </Head>
       <HomeGrid>
         {products.length > 0 &&
-          products.slice(0, 3).map((product, i) => (
+          products.slice(0, 4).map((product, i) => (
             <>
               <ProductCard
                 key={product.id}
@@ -50,7 +50,7 @@ const HomeGrid = styled.div`
   width: 100%;
   min-width: 1024px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
   grid-gap: 0;
   gap: 0;

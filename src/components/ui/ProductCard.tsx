@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import Link from 'next/link';
 import Image from 'next/image';
+import Heart from 'src/components/ui/icons/Heart';
 
 interface ProductCardProps {
   product: IProduct;
@@ -26,6 +27,9 @@ export default function ProductCard({
             height={imageProps.height}
             alt="Product image"
           />
+          <ProductButton>
+            <Heart />
+          </ProductButton>
           <ProductTagWrap>
             <Title>
               <span>{product.name}</span>
@@ -49,6 +53,21 @@ const ProductLink = styled.a`
       transition-duration: 0.5s;
     }
   }
+  :hover {
+    button {
+      background: transparent;
+    }
+  }
+`;
+
+const ProductButton = styled.button`
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #000;
+  border: none;
+  cursor: pointer;
 `;
 
 const ProductTagWrap = styled.div`
