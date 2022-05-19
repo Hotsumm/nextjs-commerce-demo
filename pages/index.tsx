@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { fetchAllProduct } from 'pages/api/product';
 import ProductCard from 'src/components/ui/ProductCard';
 import ProductGrid from 'src/components/Home/ProductGrid';
+import Hero from 'src/components/Home/Hero';
 import Marquee from 'src/components/Home/Marquee';
 
 interface HomeProps {
@@ -49,6 +50,10 @@ export default function Home({ products }: HomeProps) {
             </>
           ))}
       </Marquee>
+      <Hero
+        headline="Dessert dragée halvah croissant."
+        description="Cupcake ipsum dolor sit amet lemon drops pastry cotton candy. Sweet carrot cake macaroon bonbon croissant fruitcake jujubes macaroon oat cake. Soufflé bonbon caramels jelly beans. Tiramisu sweet roll cheesecake pie carrot cake."
+      />
     </>
   );
 }
