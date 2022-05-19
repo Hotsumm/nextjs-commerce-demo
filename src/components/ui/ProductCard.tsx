@@ -5,37 +5,56 @@ import Heart from 'src/components/ui/icons/Heart';
 
 interface ProductCardProps {
   product: IProduct;
-  imageProps: {
+  imageProps?: {
     width: number;
     height: number;
   };
   color: string;
+  variant: 'grid' | 'marquee';
 }
 
 export default function ProductCard({
   product,
   imageProps,
   color,
+  variant,
 }: ProductCardProps) {
   return (
     <>
       <Link href="/" passHref>
         <ProductLink color={color}>
-          <Image
-            src={product.images[0].url}
-            width={imageProps.width}
-            height={imageProps.height}
-            alt="Product image"
-          />
-          <ProductButton>
-            <Heart />
-          </ProductButton>
-          <ProductTagWrap>
-            <Title>
-              <span>{product.name}</span>
-            </Title>
-            <Price>{product.price}</Price>
-          </ProductTagWrap>
+          {variant === 'grid' && (
+            <>
+              <Image
+                src={product.images[0].url}
+                width={imageProps?.width}
+                height={imageProps?.height}
+                alt="Product image"
+              />
+              <ProductButton>
+                <Heart />
+              </ProductButton>
+              <ProductTagWrap>
+                <Title>
+                  <span>{product.name}</span>
+                </Title>
+                <Price>{product.price}</Price>
+              </ProductTagWrap>
+            </>
+          )}
+          {variant === 'marquee' && (
+            <MarqueeWrap>
+              <Image
+                src={product.images[0].url}
+                width={300}
+                height={300}
+                alt="Product image"
+              />
+              <ProductTitleWrap>
+                <span>{product.name}</span>
+              </ProductTitleWrap>
+            </MarqueeWrap>
+          )}
         </ProductLink>
       </Link>
     </>
@@ -96,4 +115,21 @@ const Price = styled.div`
   padding: 0.5rem 1rem;
   line-height: 18px;
   font-size: 18px;
+`;
+
+const MarqueeWrap = styled.div`
+  display: flex;
+`;
+
+const ProductTitleWrap = styled.div`
+  display: flex;
+  align-items: center;
+  span {
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    background: black;
+    color: white;
+  }
 `;

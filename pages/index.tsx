@@ -1,8 +1,9 @@
 import Head from 'next/head';
-import styled from '@emotion/styled';
 
 import { fetchAllProduct } from 'pages/api/product';
 import ProductCard from 'src/components/ui/ProductCard';
+import ProductGrid from 'src/components/Home/ProductGrid';
+import Marquee from 'src/components/Home/Marquee';
 
 interface HomeProps {
   products: IProduct[];
@@ -18,7 +19,7 @@ export default function Home({ products }: HomeProps) {
         <meta name="description" content="Next-commerce-demo" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HomeGrid>
+      <ProductGrid>
         {products.length > 0 &&
           products.slice(0, 4).map((product, i) => (
             <>
@@ -29,11 +30,25 @@ export default function Home({ products }: HomeProps) {
                   width: i === 0 ? 1080 : 540,
                   height: i === 0 ? 1080 : 540,
                 }}
+                variant="grid"
                 color={productBackground[i]}
               />
             </>
           ))}
-      </HomeGrid>
+      </ProductGrid>
+      <Marquee>
+        {products.length > 0 &&
+          products.slice(0, 3).map((product, i) => (
+            <>
+              <ProductCard
+                variant="marquee"
+                key={product.id}
+                product={product}
+                color="white"
+              />
+            </>
+          ))}
+      </Marquee>
     </>
   );
 }
@@ -45,22 +60,3 @@ export async function getStaticProps() {
     props: { products: data },
   };
 }
-
-const HomeGrid = styled.div`
-  width: 100%;
-  min-width: 1024px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-  grid-gap: 0;
-  gap: 0;
-  a {
-    :nth-child(6n + 1),
-    :nth-child(6n + 5) {
-      grid-column: span 2 / span 2;
-      grid-row: span 2 / span 2;
-    }
-    grid-column: span 1 / span 1;
-    grid-row: span 1 / span 1;
-  }
-`;
