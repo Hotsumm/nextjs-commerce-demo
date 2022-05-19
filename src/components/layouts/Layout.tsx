@@ -19,6 +19,7 @@ export default function Layout({ children }: LayoutProps) {
 }
 
 const Main = styled.main`
+  min-width: 1440px;
   width: 100vw;
   min-height: 100vh;
 `;

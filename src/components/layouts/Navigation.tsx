@@ -49,6 +49,7 @@ export default function Navigation() {
 }
 
 const NavigationContainer = styled.div`
+  min-width: 1440px;
   position: sticky;
   top: 0;
   z-index: 40;

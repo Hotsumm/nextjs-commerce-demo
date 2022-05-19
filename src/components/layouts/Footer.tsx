@@ -32,6 +32,7 @@ export default function Footer() {
 }
 
 const FooterContainer = styled.footer`
+  min-width: 1440px;
   width: 100%;
   border-top: 1px solid #333;
 `;
