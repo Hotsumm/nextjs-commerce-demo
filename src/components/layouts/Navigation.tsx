@@ -32,7 +32,7 @@ export default function Navigation() {
             <li>
               <Link href="/" passHref>
                 <a>
-                  <Heart />
+                  <Heart color={'white'} />
                 </a>
               </Link>
             </li>
