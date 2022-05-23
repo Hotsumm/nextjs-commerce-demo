@@ -17,8 +17,8 @@ const ProductGridContainer = styled.div`
   grid-gap: 0;
   gap: 0;
   a {
-    :nth-child(6n + 1),
-    :nth-child(6n + 5) {
+    :nth-of-type(6n + 1),
+    :nth-of-type(6n + 5) {
       grid-column: span 2 / span 2;
       grid-row: span 2 / span 2;
     }
