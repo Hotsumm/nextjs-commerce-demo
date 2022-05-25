@@ -18,32 +18,30 @@ export default function Home({ products }: HomeProps) {
       <ProductGrid>
         {products.length > 0 &&
           products.slice(0, 4).map((product, i) => (
-            <>
-              <ProductCard
-                key={product.id}
-                product={product}
-                imageProps={{
-                  width: i === 0 ? 1080 : 540,
-                  height: i === 0 ? 1080 : 540,
-                }}
-                variant="grid"
-                color={productBackground[i]}
-              />
-            </>
+            <ProductCard
+              key={product.id}
+              product={product}
+              imageProps={{
+                width: i === 0 ? 1080 : 540,
+                height: i === 0 ? 1080 : 540,
+              }}
+              variant="grid"
+              color={productBackground[i]}
+            />
           ))}
       </ProductGrid>
       <Marquee>
         {products.length > 0 &&
-          products.slice(0, 3).map((product, i) => (
-            <>
+          products
+            .slice(0, 3)
+            .map((product, i) => (
               <ProductCard
                 variant="marquee"
                 key={product.id}
                 product={product}
                 color="white"
               />
-            </>
-          ))}
+            ))}
       </Marquee>
       <Hero
         headline="Dessert dragée halvah croissant."
