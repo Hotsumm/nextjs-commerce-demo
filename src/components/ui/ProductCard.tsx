@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import Link from 'next/link';
 import Image from 'next/image';
 import Heart from 'src/components/ui/icons/Heart';
+import ProductTag from 'src/components/Product/ProductTag';
 
 interface ProductCardProps {
   product: IProduct;
@@ -21,7 +22,7 @@ export default function ProductCard({
 }: ProductCardProps) {
   return (
     <>
-      <Link href="/" passHref>
+      <Link href={`/product/${product.id}`} passHref>
         <ProductLink color={color}>
           {variant === 'grid' && (
             <>
@@ -34,12 +35,7 @@ export default function ProductCard({
               <ProductButton>
                 <Heart />
               </ProductButton>
-              <ProductTagWrap>
-                <Title>
-                  <span>{product.name}</span>
-                </Title>
-                <Price>{product.price}</Price>
-              </ProductTagWrap>
+              <ProductTag name={product.name} price={product.price} />
             </>
           )}
           {variant === 'marquee' && (
@@ -87,34 +83,6 @@ const ProductButton = styled.button`
   background: #000;
   border: none;
   cursor: pointer;
-`;
-
-const ProductTagWrap = styled.div`
-  padding-right: 4rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: white;
-`;
-
-const Title = styled.h3`
-  width: 100%;
-  background: black;
-  padding: 1rem 1.5rem;
-  span {
-    line-height: 32px;
-    font-weight: 800;
-    font-size: 32px;
-  }
-`;
-
-const Price = styled.div`
-  width: auto;
-  background: black;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  line-height: 18px;
-  font-size: 18px;
 `;
 
 const MarqueeWrap = styled.div`
