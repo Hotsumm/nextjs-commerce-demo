@@ -15,10 +15,10 @@ export default function Footer() {
             </FooterCol>
             <FooterCol>
               <Menu href="/" name="Home" />
-              <Menu href="/" name="About" />
-              <Menu href="/" name="Terms of use" />
-              <Menu href="/" name="Shipping & Returns" />
-              <Menu href="/" name="Privacy Policy" />
+              <Menu href="/about" name="About" />
+              <Menu href="/terms-of-use" name="Terms of use" />
+              <Menu href="/shipping-returns" name="Shipping & Returns" />
+              <Menu href="/privacy-policy" name="Privacy Policy" />
             </FooterCol>
           </FooterRow>
           <FooterRow>
