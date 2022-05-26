@@ -31,7 +31,8 @@ export const products: IProduct[] = [
         isDefault: false,
       },
     ],
-    desc: "The Next.js beanie has arrived! This embroidered beauty has a snug fit that ensures you're going to feel cozy and warm whatever you're doing.",
+    description:
+      "The Next.js beanie has arrived! This embroidered beauty has a snug fit that ensures you're going to feel cozy and warm whatever you're doing.",
   },
   {
     id: 'lightweight-jacket',
@@ -65,7 +66,8 @@ export const products: IProduct[] = [
         isDefault: false,
       },
     ],
-    desc: 'Add a little zing to your winter wardrobe with this vibrant Winter-breaker Jacket. With a brushed fleece inside, and a relaxed unisex fit, this jacket is just the stuff of the dreams, so be quick to grab yourself one!',
+    description:
+      'Add a little zing to your winter wardrobe with this vibrant Winter-breaker Jacket. With a brushed fleece inside, and a relaxed unisex fit, this jacket is just the stuff of the dreams, so be quick to grab yourself one! Long sleeve ripstop jacket colorblocked in black. Rough pattern in obsidian black and brown printed throughout. Printed graphic in white throughout. Logo-woven webbing trim in white and black throughout. Bungee-style drawstring at hood featuring rubberized logo hardware. Zip closure at front. Rubberized logo appliqué at chest. Welt pockets and textile logo patch in orange at waist. Elasticized cuffs. Partially lined. Black hardware.',
   },
   {
     id: 't-shirt',
@@ -100,7 +102,8 @@ export const products: IProduct[] = [
         isDefault: false,
       },
     ],
-    desc: "This t-shirt is a must-have in your wardrobe, combining the timeless fit of a classic tee with an intricate embroidered detail that brings the shirt to a whole new level. It's soft and durable, so be prepared to have a new favorite t-shirt!",
+    description:
+      "This t-shirt is a must-have in your wardrobe, combining the timeless fit of a classic tee with an intricate embroidered detail that brings the shirt to a whole new level. It's soft and durable, so be prepared to have a new favorite t-shirt!",
   },
   {
     id: 'mask',
@@ -126,6 +129,7 @@ export const products: IProduct[] = [
         isDefault: false,
       },
     ],
-    desc: "This durable face mask is made from two layers of treated fabric and features elastic ear loops and a center flat seam that ensure a close fit. It's machine-washable and reusable. Sold in packs of 3.",
+    description:
+      "This durable face mask is made from two layers of treated fabric and features elastic ear loops and a center flat seam that ensure a close fit. It's machine-washable and reusable. Sold in packs of 3.",
   },
 ];

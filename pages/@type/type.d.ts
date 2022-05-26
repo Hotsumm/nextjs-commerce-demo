@@ -5,7 +5,7 @@ interface IProduct {
   colors: string[];
   sizes: string[];
   images: IProductImages[];
-  desc: string;
+  description: string;
   relatedProduct?: IProduct[];
 }
 

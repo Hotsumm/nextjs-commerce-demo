@@ -27,8 +27,7 @@ const ProductArrowContainer = styled.div`
   z-index: 30;
   display: flex;
   flex-direction: row;
-  border-width: 1px;
-  border-color: white;
+  border: 1px solid black;
   color: white;
   height: 48px;
   button {
@@ -37,6 +36,9 @@ const ProductArrowContainer = styled.div`
     padding: 0 2.25rem;
     :hover {
       background: #4c2889;
+    }
+    :last-child {
+      border-left: 1px solid black;
     }
   }
 `;

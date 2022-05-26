@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import Heart from 'src/components/ui/icons/Heart';
 import ProductTag from 'src/components/Product/ProductTag';
+import ProductSideBar from 'src/components/Product/ProductSideBar';
 import ProductSlider from 'src/components/Product/ProductSlider';
 import Image from 'next/image';
 
@@ -29,6 +30,7 @@ export default function ProductView({ product }: ProductViewProps) {
           ))}
         </ProductSlider>
       </ProductViewWrap>
+      <ProductSideBar product={product} />
     </ProductViewContainer>
   );
 }
@@ -43,7 +45,8 @@ const ProductViewContainer = styled.div`
   gap: 0.25rem;
   overflow-x: hidden;
   min-height: auto;
-  background-color: white;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #444;
 `;
 
 const ProductViewWrap = styled.div`
