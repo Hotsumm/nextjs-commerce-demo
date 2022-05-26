@@ -2,8 +2,8 @@ interface IProduct {
   id: string;
   name: string;
   price: string;
-  color: string[];
-  size: string[];
+  colors: string[];
+  sizes: string[];
   images: IProductImages[];
   desc: string;
   relatedProduct?: IProduct[];

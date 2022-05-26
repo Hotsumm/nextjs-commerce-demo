@@ -3,8 +3,8 @@ export const products: IProduct[] = [
     id: 'black-beanie',
     name: 'Black Beanie',
     price: '$80.00',
-    color: ['black'],
-    size: [],
+    colors: ['white', 'black'],
+    sizes: [],
     images: [
       {
         url: 'https://cdn11.bigcommerce.com/s-qfzerv205w/images/stencil/original/products/115/489/Hat-front-black__72990.1603748583.png',
@@ -37,8 +37,8 @@ export const products: IProduct[] = [
     id: 'lightweight-jacket',
     name: 'Lightweight Jacket',
     price: '$249.99',
-    color: ['white', 'black'],
-    size: ['S', 'M', 'L'],
+    colors: ['white', 'black'],
+    sizes: ['S', 'M', 'L'],
     images: [
       {
         url: 'https://cdn11.bigcommerce.com/s-qfzerv205w/images/stencil/original/products/116/512/Men-Jacket-Front-Black__15466.1603283963.png',
@@ -72,8 +72,8 @@ export const products: IProduct[] = [
 
     name: 'T-Shirt',
     price: '$160.12',
-    color: ['white', 'black'],
-    size: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+    colors: ['white', 'black'],
+    sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
     images: [
       {
         url: 'https://cdn11.bigcommerce.com/s-qfzerv205w/images/stencil/original/products/117/534/Men-TShirt-Black-Front__70046.1603748348.png',
@@ -106,8 +106,8 @@ export const products: IProduct[] = [
     id: 'mask',
     name: 'Mask',
     price: '$80.00',
-    color: ['white', 'black'],
-    size: [],
+    colors: ['white', 'black'],
+    sizes: [],
     images: [
       {
         url: 'https://cdn11.bigcommerce.com/s-qfzerv205w/images/stencil/original/products/118/509/Surgical-Mask-Front-Black__75855.1603756822.png',
