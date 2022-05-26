@@ -1,6 +1,6 @@
 export const products: IProduct[] = [
   {
-    id: 0,
+    id: 'black-beanie',
     name: 'Black Beanie',
     price: '$80.00',
     color: ['black'],
@@ -34,7 +34,7 @@ export const products: IProduct[] = [
     desc: "The Next.js beanie has arrived! This embroidered beauty has a snug fit that ensures you're going to feel cozy and warm whatever you're doing.",
   },
   {
-    id: 1,
+    id: 'lightweight-jacket',
     name: 'Lightweight Jacket',
     price: '$249.99',
     color: ['white', 'black'],
@@ -68,7 +68,8 @@ export const products: IProduct[] = [
     desc: 'Add a little zing to your winter wardrobe with this vibrant Winter-breaker Jacket. With a brushed fleece inside, and a relaxed unisex fit, this jacket is just the stuff of the dreams, so be quick to grab yourself one!',
   },
   {
-    id: 2,
+    id: 't-shirt',
+
     name: 'T-Shirt',
     price: '$160.12',
     color: ['white', 'black'],
@@ -102,7 +103,7 @@ export const products: IProduct[] = [
     desc: "This t-shirt is a must-have in your wardrobe, combining the timeless fit of a classic tee with an intricate embroidered detail that brings the shirt to a whole new level. It's soft and durable, so be prepared to have a new favorite t-shirt!",
   },
   {
-    id: 3,
+    id: 'mask',
     name: 'Mask',
     price: '$80.00',
     color: ['white', 'black'],
