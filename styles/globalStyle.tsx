@@ -7,6 +7,23 @@ export const GlobalStyles = css`
   body {
     background: #000;
   }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  input,
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  ol,
+  ul,
+  li {
+    list-style: none;
+  }
 
   *,
   *::after,
