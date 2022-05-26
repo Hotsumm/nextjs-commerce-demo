@@ -52,7 +52,7 @@ const NavigationContainer = styled.div`
   min-width: 1440px;
   position: sticky;
   top: 0;
-  z-index: 40;
+  z-index: 9999;
   width: 100%;
   background: #000000;
 `;
