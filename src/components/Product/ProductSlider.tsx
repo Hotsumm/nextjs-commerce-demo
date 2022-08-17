@@ -10,9 +10,9 @@ import styled from '@emotion/styled';
 
 import ProductArrow from 'src/components/Product/ProductArrow';
 
-interface ProductSliderProps {
+type ProductSliderProps = {
   children?: React.ReactNode;
-}
+};
 
 export default function ProductSlider({ children }: ProductSliderProps) {
   const [currentSlide, setCurrentSlide] = useState(0);

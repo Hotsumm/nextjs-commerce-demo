@@ -6,9 +6,9 @@ import Hero from 'src/components/Home/Hero';
 import Marquee from 'src/components/Home/Marquee';
 import { ProductType } from 'src/types/product';
 
-interface HomeProps {
+type HomeProps = {
   products: ProductType[];
-}
+};
 
 const productBackground = ['#7928ca', '#fafafa', '#ff0080;', '#f1e05a'];
 

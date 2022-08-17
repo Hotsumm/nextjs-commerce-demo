@@ -2,10 +2,10 @@ import styled from '@emotion/styled';
 import ArrowLeft from '../ui/icons/ArrowLeft';
 import ArrowRight from '../ui/icons/ArrowRight';
 
-interface ProductArrowProps {
+type ProductArrowProps = {
   onPrev: () => void;
   onNext: () => void;
-}
+};
 
 export default function ProductArrow({ onPrev, onNext }: ProductArrowProps) {
   return (

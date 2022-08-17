@@ -1,6 +1,6 @@
-interface CheckProps {
+type CheckProps = {
   color: string;
-}
+};
 
 export default function Check({ color }: CheckProps) {
   return (

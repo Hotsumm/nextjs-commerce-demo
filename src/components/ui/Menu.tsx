@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
 import Link from 'next/link';
 
-interface MenuProps {
+type MenuProps = {
   href: string;
   name: string;
-}
+};
 
 export default function Menu({ href, name }: MenuProps) {
   return (

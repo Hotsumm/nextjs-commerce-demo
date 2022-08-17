@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
-interface ProductGridProps {
+type ProductGridProps = {
   children: React.ReactNode;
-}
+};
 
 export default function ProductGrid({ children }: ProductGridProps) {
   return <ProductGridContainer>{children}</ProductGridContainer>;

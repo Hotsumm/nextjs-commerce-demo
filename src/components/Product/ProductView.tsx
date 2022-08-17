@@ -6,9 +6,9 @@ import ProductSlider from 'src/components/Product/ProductSlider';
 import Image from 'next/image';
 import { ProductType } from 'src/types/product';
 
-interface ProductViewProps {
+type ProductViewProps = {
   product: ProductType;
-}
+};
 
 export default function ProductView({ product }: ProductViewProps) {
   return (

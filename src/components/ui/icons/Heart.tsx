@@ -1,6 +1,6 @@
-interface HeartProps {
+type HeartProps = {
   color?: string;
-}
+};
 
 export default function Heart({ color }: HeartProps) {
   return (

@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 
-interface ProductTagProps {
+type ProductTagProps = {
   name: string;
   price: string;
-}
+};
 
 export default function ProductTag({ name, price }: ProductTagProps) {
   return (

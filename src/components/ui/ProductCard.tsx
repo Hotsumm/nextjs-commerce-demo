@@ -5,7 +5,7 @@ import Heart from 'src/components/ui/icons/Heart';
 import ProductTag from 'src/components/Product/ProductTag';
 import { ProductType } from 'src/types/product';
 
-interface ProductCardProps {
+type ProductCardProps = {
   product: ProductType;
   imageProps?: {
     width: number;
@@ -13,7 +13,7 @@ interface ProductCardProps {
   };
   color: string;
   variant: 'grid' | 'marquee';
-}
+};
 
 export default function ProductCard({
   product,

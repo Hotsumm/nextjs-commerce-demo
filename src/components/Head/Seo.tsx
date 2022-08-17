@@ -1,8 +1,8 @@
 import Head from 'next/head';
 
-interface SeoProps {
+type SeoProps = {
   title: string;
-}
+};
 
 export default function Seo({ title }: SeoProps) {
   return (

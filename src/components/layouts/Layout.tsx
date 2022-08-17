@@ -4,9 +4,9 @@ import styled from '@emotion/styled';
 import Navigation from 'src/components/layouts/Navigation';
 import Footer from 'src/components/layouts/Footer';
 
-interface LayoutProps {
+type LayoutProps = {
   children: React.ReactNode;
-}
+};
 
 export default function Layout({ children }: LayoutProps) {
   return (

@@ -3,9 +3,9 @@ import { useState } from 'react';
 import Check from 'src/components/ui/icons/Check';
 import { ProductType } from 'src/types/product';
 
-interface ProductSideBarProps {
+type ProductSideBarProps = {
   product: ProductType;
-}
+};
 
 export default function ProductSideBar({ product }: ProductSideBarProps) {
   const [selectedColor, setSelectedColor] = useState(0);

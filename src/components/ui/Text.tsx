@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import styled from '@emotion/styled';
 
-interface TextProps {
+type TextProps = {
   title?: string;
-}
+};
 
 export default function Text({ title }: TextProps) {
   return (

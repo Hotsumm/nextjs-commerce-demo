@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
 
-interface MarqueeProps {
+type MarqueeProps = {
   children: React.ReactNode;
-}
+};
 
 export default function Marquee({ children }: MarqueeProps) {
   return <MarqueeContainer>{children}</MarqueeContainer>;
