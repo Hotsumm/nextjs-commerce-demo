@@ -48,7 +48,7 @@ export default function Navigation() {
   );
 }
 
-const NavigationContainer = styled.div`
+const NavigationContainer = styled.nav`
   min-width: 1440px;
   position: sticky;
   top: 0;

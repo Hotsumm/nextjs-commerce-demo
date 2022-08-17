@@ -28,6 +28,7 @@ const SearchBarWrap = styled.div`
     display: none;
   }
   input {
+    color: white;
     width: 100%;
     line-height: 1.5rem;
     appearance: none;

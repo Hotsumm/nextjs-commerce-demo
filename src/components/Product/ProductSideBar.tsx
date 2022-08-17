@@ -1,9 +1,10 @@
 import styled from '@emotion/styled';
 import { useState } from 'react';
 import Check from 'src/components/ui/icons/Check';
+import { ProductType } from 'src/types/product';
 
 interface ProductSideBarProps {
-  product: IProduct;
+  product: ProductType;
 }
 
 export default function ProductSideBar({ product }: ProductSideBarProps) {

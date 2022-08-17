@@ -1,15 +1,15 @@
-interface IProduct {
+export type ProductType = {
   id: string;
   name: string;
   price: string;
   colors: string[];
   sizes: string[];
-  images: IProductImages[];
+  images: ProductImages[];
   description: string;
-  relatedProduct?: IProduct[];
-}
+  relatedProduct?: ProductType[];
+};
 
-interface IProductImages {
+export type ProductImages = {
   url: string;
   isDefault: boolean;
-}
+};

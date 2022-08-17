@@ -1,15 +1,24 @@
-import { fetchAllProduct, fetchProduct } from 'pages/api/product';
+import { fetchAllProduct, fetchProductById } from 'src/api/productApi';
 import Seo from 'src/components/Head/Seo';
 import ProductView from 'src/components/Product/ProductView';
+import { ProductType } from 'src/types/product';
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
+type ProductDetailProps = {
+  product: ProductType;
+};
+
+export default function ProductDetail({ product }: ProductDetailProps) {
+  return (
+    <>
+      <Seo title={product.name} />
+      <ProductView product={product}></ProductView>
+    </>
+  );
 }
 
-export async function getStaticProps({ params }: PageProps) {
-  const product = await fetchProduct(params.slug);
+export async function getStaticProps(context: any) {
+  const { slug } = context.params;
+  const product = await fetchProductById(slug);
   return {
     props: { product },
   };
@@ -17,21 +26,8 @@ export async function getStaticProps({ params }: PageProps) {
 
 export async function getStaticPaths() {
   const products = await fetchAllProduct();
-  const paths = products.map((product) => ({
+  const paths = products.map((product: any) => ({
     params: { slug: product.id },
   }));
   return { paths, fallback: false };
-}
-
-interface SlugProps {
-  product: IProduct;
-}
-
-export default function Slug({ product }: SlugProps) {
-  return (
-    <>
-      <Seo title={product.name} />
-      <ProductView product={product}></ProductView>
-    </>
-  );
 }

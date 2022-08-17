@@ -3,9 +3,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Heart from 'src/components/ui/icons/Heart';
 import ProductTag from 'src/components/Product/ProductTag';
+import { ProductType } from 'src/types/product';
 
 interface ProductCardProps {
-  product: IProduct;
+  product: ProductType;
   imageProps?: {
     width: number;
     height: number;

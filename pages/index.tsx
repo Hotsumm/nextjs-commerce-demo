@@ -1,12 +1,13 @@
-import { fetchAllProduct } from 'pages/api/product';
+import { fetchAllProduct } from 'src/api/productApi';
 import Seo from 'src/components/Head/Seo';
 import ProductCard from 'src/components/ui/ProductCard';
 import ProductGrid from 'src/components/Home/ProductGrid';
 import Hero from 'src/components/Home/Hero';
 import Marquee from 'src/components/Home/Marquee';
+import { ProductType } from 'src/types/product';
 
 interface HomeProps {
-  products: IProduct[];
+  products: ProductType[];
 }
 
 const productBackground = ['#7928ca', '#fafafa', '#ff0080;', '#f1e05a'];

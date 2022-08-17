@@ -4,9 +4,10 @@ import ProductTag from 'src/components/Product/ProductTag';
 import ProductSideBar from 'src/components/Product/ProductSideBar';
 import ProductSlider from 'src/components/Product/ProductSlider';
 import Image from 'next/image';
+import { ProductType } from 'src/types/product';
 
 interface ProductViewProps {
-  product: IProduct;
+  product: ProductType;
 }
 
 export default function ProductView({ product }: ProductViewProps) {
